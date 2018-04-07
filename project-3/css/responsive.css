@@ -1,0 +1,40 @@
+@media all and (max-width: 992px) {
+
+    .navbar,
+    .navbar.scroll {
+        background-color: #fff;
+    }
+
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-light .navbar-brand {
+        color: #0ed8d6;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-brand:hover {
+        color: #333333;
+    }
+
+    .navbar .nav-item {
+        text-align: right;
+        padding: 10px 0;
+        border-top: 1px solid rgba(119, 119, 119, 0.6);
+    }
+    
+    .navbar-light .navbar-toggler {
+        border: 1px solid #0ed8d6;
+    }
+}
+
+@media all and (max-width: 768px) {
+
+    #contact .col-new {
+        margin-bottom: 30px;
+    }
+
+    #main-footer .footer-item,
+    #main-footer #footer-nav ul {
+        text-align: center;
+        margin: 7px 0;
+    }
+}
