@@ -1,0 +1,97 @@
+#drop {
+    display: none;
+}
+
+.toggle {
+    display: none;
+}
+
+@media all and (max-width: 1170px) {
+    .col-1-4 {
+        width: 45%;
+        margin-bottom: 50px;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .toggle {
+        display: block;
+        background-color: #87509c;
+        padding: 0 20px;
+        color: #fff;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+        text-align: right;
+    }
+    #main-navigation ul {
+        display: none;
+    }
+    #main-navigation #drop:checked + ul {
+        display: block;
+    }
+    #main-navigation ul li {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        text-align: right;
+    }
+    #contact input,
+    #contact textarea {
+        width: 100%;
+        margin: 5px 0;
+    }
+    #contact form textarea {
+        margin: 0 0 10px 0;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #team .col-1-4 {
+        width: 100%;
+    }
+    #references .references-row {
+        margin-bottom: 0;
+    }
+    #references .references-row .col-1-4-narrow {
+        flex-basis: 20%;
+        margin-bottom: 50px;
+    }
+    #references .references-row .col-1-4-wide {
+        flex-basis: 80%;
+        margin-bottom: 50px;
+    }
+}
+
+@media all and (max-width: 576px) {
+    h1 {
+        font-size: 24px;
+    }
+    #main-header .boxed-section {
+        padding: 30vh 0;
+    }
+    #skills .col-1-4 {
+        width: 100%;
+    }
+    #references .references-row .col-1-4-wide {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    #references .references-row .col-1-4-narrow {
+        flex-basis: 40%;
+        margin-bottom: 0;
+    }
+}
+
+@media all and (max-width: 420px) {
+    #main-header .button-holder button {
+        padding: 20px;
+    }
+    #references .col-1-4-narrow {
+        flex-basis: 70%;
+    }
+    #references .col-1-4-wide {
+        flex-basis: 100%;
+    }
+}
