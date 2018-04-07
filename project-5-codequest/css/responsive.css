@@ -1,0 +1,14 @@
+@media all and (max-width: 576px) {
+
+    #login .login-container .login-container-inner #login-form input {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+
+    #login .login-container .login-container-inner #login-form input[type="submit"]:hover {
+        background-color: #3022ad;
+        transform: none;
+    }
+}

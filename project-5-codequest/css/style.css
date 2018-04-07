@@ -1,0 +1,139 @@
+/* General Styles Start */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+/* General Styles End */
+
+/* Login Section Class Start */
+
+.login {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: -moz-linear-gradient(225deg, #3022ad 0%, #c86dd7 100%);
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #c86dd7), color-stop(100%, #3022ad));
+    background: -webkit-linear-gradient(225deg, #3022ad 0%, #c86dd7 100%);
+    background: -o-linear-gradient(225deg, #3022ad 0%, #c86dd7 100%);
+    background: -ms-linear-gradient(225deg, #3022ad 0%, #c86dd7 100%);
+    background: linear-gradient(225deg, #3022ad 0%, #c86dd7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3022ad', endColorstr='#c86dd7', GradientType=1);
+
+}
+
+.login .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 470px;
+    width: 470px;
+    background-color: #fff;
+    border-radius: 14px;
+    -webkit-box-shadow: 0 0 40px 0 #333333;
+    box-shadow: 0 0 40px 0 #333333;
+}
+
+.login .login-container .login-container-inner h1 {
+    font-size: 28px;
+    color: #4A494A;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.login .login-container .login-container-inner .photos-container {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .login-container .login-container-inner .photos-container .main-photo {
+    margin-left: -10%;
+    margin-right: -10%;
+    z-index: 10;
+}
+
+.login .login-container .login-container-inner form input {
+    width: 100%;
+}
+
+.login .login-container .login-container-inner form input[type="email"] {
+    display: block;
+    border-bottom: 2px solid #CFCFCF;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 10px;
+    transition: all 0.3s;
+    text-indent: 30px;
+    background-image: url(../img/email-icon.png);
+    background-position: 10px;
+    background-repeat: no-repeat;
+    background-size: inherit;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+.login .login-container .login-container-inner form input[type="email"]::placeholder {
+    color: #CFCFCF;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+.login .login-container .login-container-inner form input[type="email"]:focus {
+    background-color: #f3f3f3;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.login .login-container .login-container-inner input[type="submit"] {
+    background: -moz-linear-gradient(top, #b564d2 0%, #c76dd7 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #b564d2), color-stop(100%, #c76dd7));
+    background: -webkit-linear-gradient(top, #b564d2 0%, #c76dd7 100%);
+    background: -o-linear-gradient(top, #b564d2 0%, #c76dd7 100%);
+    background: -ms-linear-gradient(top, #b564d2 0%, #c76dd7 100%);
+    background: linear-gradient(to bottom, #b564d2 0%, #c76dd7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b564d2', endColorstr='#c76dd7', GradientType=0);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    height: 50px;
+    margin-top: 20px;
+    font-weight: 600;
+    -webkit-box-shadow: 0 0 16px 4px rgba(144, 19, 254, 0.56);
+    box-shadow: 0 0 16px 4px rgba(144, 19, 254, 0.56);
+    transition: all 0.6s;
+}
+
+.login .login-container .login-container-inner input[type="submit"]:hover {
+    background-color: #3022ad;
+    transform: scale(1.1);
+}
+
+.login .login-container .login-container-inner ul {
+    list-style: none;
+    padding-left: 0;
+    background-color: #3022ad;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* Login Section Class End */
