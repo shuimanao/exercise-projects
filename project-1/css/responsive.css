@@ -1,0 +1,123 @@
+#drop {
+    display: none;
+}
+
+.toggle {
+    display: none;
+}
+
+@media all and (max-width: 1200px) {}
+
+@media all and (max-width: 992px) {
+    .toggle {
+        display: block;
+        background-color: #fff;
+        padding: 0 20px;
+        color: #1ac056;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+        text-align: right;
+    }
+    #main-nav > ul {
+        display: none;
+    }
+    #main-nav #drop:checked + ul {
+        display: block;
+    }
+    #main-nav > ul > li {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        text-align: right;
+    }
+    #main-header .main-header-content {
+        padding: 20vh;
+    }
+    #main-header .main-header-content h1 {
+        font-size: 80px;
+    }
+    #about figure {
+        width: 100%;
+    }
+    #about article {
+        width: 100%;
+        text-align: center;
+    }
+    #skill #skills-icons figure {
+        margin: 16px 30px;
+    }
+    #portfolio #portfolio-item-1,
+    #portfolio #portfolio-item-2 {
+        width: 50%;
+    }
+
+    #portfolio #portfolio-item-3 {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 768px) {
+    section {
+        padding: 0 40px 50px;
+    }
+    #main-header .main-header-content h1 {
+        font-size: 3em;
+    }
+    #main-header .main-header-content h2 {
+        font-size: 1.5em;
+    }
+    #skill #skills-icons figure {
+        margin: 16px 20px;
+    }
+    #portfolio #portfolio-item-1 {
+        width: 100%;
+    }
+    #portfolio #portfolio-item-2 {
+        width: 100%;
+    }
+    #contact .contact-social-icons a {
+        margin-right: 5px;
+    }
+}
+
+@media all and (max-width: 576px) {
+    section {
+        padding: 0 10px 30px;
+    }
+    #main-header .main-header-content h1 {
+        font-size: 2.2em;
+    }
+    #main-header .main-header-content h2 {
+        font-size: 1em;
+    }
+
+    #skill #skills-icons figure {
+        width: 30%;
+    }
+
+    .contact-data,
+    .contact-form {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    #contact .section-header {
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+}
+@media all and (max-width: 420px) {
+    #main-header .main-header-content h1 {
+        font-size: 1.8em;
+    }
+    #main-header .main-header-content h2 {
+        font-size: 1em;
+    }
+}
