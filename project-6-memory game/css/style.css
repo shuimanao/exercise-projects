@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-main {
+    flex-basis: 15%;
+    flex-grow: 1;
+    height: 33.33vh;
+    border: 4px solid #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (orientation: portrait) {
+    .img-main {
+        flex-basis: 30%;
+        height: 16.66vh;
+    }
+}
+
+.card-1 {
+    background-image: url(../img/card-1.png);
+}
+
+.card-2 {
+    background-image: url(../img/card-2.png);
+}
+
+.card-3 {
+    background-image: url(../img/card-3.png);
+}
+
+.card-4 {
+    background-image: url(../img/card-4.png);
+}
+
+.card-5 {
+    background-image: url(../img/card-5.png);
+}
+
+.card-6 {
+    background-image: url(../img/card-6.png);
+}
+
+.card-7 {
+    background-image: url(../img/card-7.png);
+}
+
+.card-8 {
+   background-image: url(../img/card-8.png);
+}
+
+.card-9 {
+    background-image: url(../img/card-9.png);
+}
+
+.hidden {
+    background-image: url(../img/card-black.png);
+}
+
+.off {
+    background-image: url(../img/card-white.png);
+}
