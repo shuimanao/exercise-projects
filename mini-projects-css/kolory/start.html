@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zadanie 1 - zmiana koloru po najechaniu</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .bg {
+            background-color: #888;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .circle:hover {
+            cursor: pointer;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+        .circle.red {
+            top: 20px;
+            left: 20px;
+        }
+
+        .circle.red:hover~.bg>p.red,
+        .circle.green:hover~.bg>p.green,
+        .circle.blue:hover~.bg>p.blue,
+        .circle.orange:hover~.bg>p.orange {
+            opacity: 1;
+        }
+
+        .circle.green {
+            top: 20px;
+            right: 20px;
+        }
+
+        .circle.blue {
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .circle.orange {
+            bottom: 20px;
+            right: 20px;
+        }
+
+        p {
+            height: 100%;
+            width: 100%;
+            padding-top: calc(50vh - 30px);
+            position: absolute;
+            opacity: 0;
+            transition: all 0.5s linear;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red circle"></div>
+    <div class="green circle"></div>
+    <div class="blue circle"></div>
+    <div class="orange circle"></div>
+    <div class="bg">
+        <p class="red">Czerwony</p>
+        <p class="green">Zielony</p>
+        <p class="blue">Niebieski</p>
+        <p class="orange">Pomarańczowy</p>
+    </div>
+</body>
+
+</html>
