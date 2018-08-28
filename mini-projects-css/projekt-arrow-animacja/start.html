@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animacja strzałki w dół</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            cursor: pointer;
+        }
+
+        button i {
+            transform: translateY(-30px);
+            animation: arrows 2s linear infinite;
+            text-shadow: 0 -10px 0 white, 0 -20px 0 white;
+        }
+
+        button:hover i {
+            animation-duration: 1s;
+        }
+
+        @keyframes arrows {
+
+            100% {
+                transform: translateY(50px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="arrow">
+        <i class="fas fa-angle-down"></i>
+    </button>
+</body>
+
+</html>
